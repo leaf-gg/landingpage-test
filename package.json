@@ -1,28 +1,34 @@
 {
-  "name": "landing-page-test",
-  "version": "1.5.0",
-  "description": "Babel, Stylus and PostCSS made simple.",
-  "author": "Luiz Guilherme",
-  "person": {
-    "name": "Luiz Guilherme",
-    "email": "luiz1223@hotmail.com",
-    "url": "https://www.linkedin.com/in/luiz-guilherme-42b066b7/"
-  },
-  "repository": "https://github.com/heyimleaf/landingpage-test/",
-  "license": "MIT",
-  "homepage": "https://github.com/heyimleaf/landingpage-test/",
-  "devDependencies": {
+  "name": "landing-project",
+  "version": "1.0.0",
+  "description": "Babel, Stylus and PostCSS simple.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
     "bootstrap-4-stylus": "^1.0.7",
-    "@babel/core": "^7.5.5",
-    "autoprefixer": "*",
-    "css-mqpacker": "*",
-    "cssnano": "*",
-    "gulp": "^4.0.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-postcss": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-stylus": "*",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylus": "^2.7.0",
     "gulp-terser": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyimleaf/landingpage-test.git"
+  },
+  "author": "Luiz Guilherme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyimleaf/landingpage-test/issues"
+  },
+  "homepage": "https://github.com/heyimleaf/landingpage-test#readme"
 }

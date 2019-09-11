@@ -6,6 +6,9 @@ webfont(family, file, weight, style = 'normal', display = 'auto')
 	@font-face
 		font-family family
 		src url(font-url(file + '.ttf')) format('truetype')
+		src url(font-url(file + '.otf')) format('opentype')
+		src url(font-url(file + '.dfont')) format('dfont')
+		src url(font-url(file + '.woff')) format('woff')
 		font-weight weight
 		font-style style
 		font-display display

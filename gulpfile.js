@@ -9,7 +9,9 @@ const gulp = require('gulp'),
     cssnano = require('cssnano'),
     concat = require('gulp-concat'),
     babel = require('gulp-babel'), 
-    terser = require('gulp-terser');
+    terser = require('gulp-terser'),
+    notify = require('gulp-notify');
+
 
 const config = {
     js : {
@@ -37,6 +39,7 @@ gulp.task('js', () => {
     .pipe(terser())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.dist))
+    .pipe(notify('JS file loaded.'))
 });
     
 gulp.task('css', () => {
@@ -45,7 +48,8 @@ gulp.task('css', () => {
         .pipe(sourcemaps.init())
         .pipe(postcss(config.postCSSModules))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(config.dist));
+        .pipe(gulp.dest(config.dist))
+        .pipe(notify('CSS file loaded.'))
 });
 
 gulp.task('watch', (done) => {
